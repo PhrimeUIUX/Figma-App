@@ -1,6 +1,6 @@
 const FIGMA_URL = "https://www.figma.com/";
 // Detect if running as installed PWA
-const isStandalone = window.matchMedia("(display-mode: standalone)").matches ||
+const isStandalone = window.matchMedia("(display-mode: fullscreen)").matches ||
   window.navigator.standalone === true;
 
 if (isStandalone) {
